@@ -1,0 +1,138 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(bg-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 4.5% 10% 0 5%;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1.2rem 0;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.main-section {
+  width: inherit;
+}
+
+/* TOP SECTION */
+.logo {
+  width: 13rem;
+}
+
+/* MIDDLE SECTION */
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 4rem 0 0.5rem;
+}
+
+.item2 {
+  padding: 5% 0% 5% 10%;
+}
+
+.btn {
+  margin-top: 10px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #674BAF;
+  font-size: 16px;
+  background: #fff;
+  padding: 18px 70px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 3px 3px 15px hsl(257, 40%, 29%);
+}
+
+.btn:hover {
+  color: #fff;
+  background: #E882E8;
+  text-decoration: none;
+}
+
+/* BOTTOM SECTION */
+.icons-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  vertical-align: middle;
+  padding: 12px 14px 12px 10px;
+  color: #fff;
+  margin: 8px;
+}
+
+.icon:hover {
+  color: #E882E8;
+  border-color: #E882E8;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:1200px) {
+  body {
+    height: auto;
+  }
+
+  .mockup-img {
+    width: 100%;
+  }
+
+  .item1 {
+    grid-column: 1/2;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .item2 {
+    grid-column: 1/2;
+    padding: 7%;
+    text-align: center;
+  }
+
+  .icons-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width:800px) {
+  body {
+    background-image: url(bg-mobile.svg);
+    background-size: contain;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .item2 {
+    padding: 7% 0;
+  }
+}
